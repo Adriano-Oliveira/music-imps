@@ -31,3 +31,8 @@
 # Debug files
 *.dSYM/
 *.su
+
+# Dev C++
+*.dev
+*.layout
+Makefile.win
