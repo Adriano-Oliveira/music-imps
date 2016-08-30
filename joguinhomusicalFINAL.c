@@ -42,37 +42,42 @@ void tocarEscalaCromatica(Nota escalaCromatica[]) {
 	}
 }
 
+//Imprime o menu do jogo de intervalos e nada retorna
+void menuIntervalos(){
+    printf("***** Intervalos *****\n");
+    printf("<a> 2a menor\n");
+    printf("<b> 2a Maior\n");
+    printf("<c> 3a menor\n");
+    printf("<d> 3a Maior\n");
+    printf("<e> 4a Justa\n");
+    printf("<f> 5a Justa\n");
+    printf("Qual intervalo foi tocado?\n");
+    printf("<s> ou <S> para Sair\n");
+}
+
 void intervalos() {
-	
+
 	int acertos = 0;
 	int erros = 0;
 	int i = 0;
-	         
+
    	while (i==0) {
-   		
+
    		system("cls");
-   		
+
 		char escolha[1];
     	int intervalo = rand() % 6;
     	printf("Tocando...");
-    	
+
     	if (intervalo==0) {
-    		
+
 		    Beep(261,500);
 		    Beep(277,500);
 		    system("cls");
-		    
-		    printf("***** Intervalos *****\n");
-	   	 	printf("<a> 2a menor\n");
-	    	printf("<b> 2a Maior\n");
-	    	printf("<c> 3a menor\n");
-	        printf("<d> 3a Maior\n");
-	        printf("<e> 4a Justa\n");
-	        printf("<f> 5a Justa\n");
-	        printf("Qual intervalo foi tocado?\n");
-	    	printf("<s> ou <S> para Sair\n");  	
-	        scanf("%s",&escolha);
-                      
+
+		    menuIntervalos();
+		    scanf("%s",&escolha);
+
         	if (strcmp(escolha,"s") == 0 || strcmp(escolha,"S")==0) {
 				i++;
 				printf("Acertos = %d\nErros = %d",acertos,erros);
@@ -86,24 +91,16 @@ void intervalos() {
 			}
 			Sleep(1000);
 		}
-		
+
 		else if (intervalo==1) {
-			
+
 			Beep(261,500);
 			Beep(293,500);
 			system("cls");
-			
-			printf("***** Intervalos *****\n");
-	   	 	printf("<a> 2a menor\n");
-	    	printf("<b> 2a Maior\n");
-	    	printf("<c> 3a menor\n");
-	        printf("<d> 3a Maior\n");
-	        printf("<e> 4a Justa\n");
-	        printf("<f> 5a Justa\n");
-	        printf("Qual intervalo foi tocado?\n");
-	    	printf("<s> ou <S> para Sair\n");  	
-	        scanf("%s",&escolha);
-	        
+
+			menuIntervalos();
+		    scanf("%s",&escolha);
+
 	        if (strcmp(escolha,"s") == 0 || strcmp(escolha,"S")==0) {
 				i++;
 				printf("\nAcertos = %d\nErros = %d\n",acertos,erros);
@@ -118,24 +115,16 @@ void intervalos() {
 			}
 			Sleep(1000);
 		}
-		
+
 		else if (intervalo==2) {
-			
+
 			Beep(261,500);
 			Beep(311,500);
 			system("cls");
-			
-			printf("***** Intervalos *****\n");
-	   	 	printf("<a> 2a menor\n");
-	    	printf("<b> 2a Maior\n");
-	    	printf("<c> 3a menor\n");
-	        printf("<d> 3a Maior\n");
-	        printf("<e> 4a Justa\n");
-	        printf("<f> 5a Justa\n");
-	        printf("Qual intervalo foi tocado?\n");
-	    	printf("<s> ou <S> para Sair\n");  	
-	        scanf("%s",&escolha);
-	        
+
+			menuIntervalos();
+		    scanf("%s",&escolha);
+
 	        if (strcmp(escolha,"s") == 0 || strcmp(escolha,"S")==0) {
 				i++;
 				printf("\nAcertos = %d\nErros = %d\n",acertos,erros);
@@ -150,24 +139,16 @@ void intervalos() {
 			}
 			Sleep(1000);
 		}
-		
+
 		else if (intervalo==3) {
-			
+
 			Beep(261,500);
 			Beep(329,500);
 			system("cls");
-			
-			printf("***** Intervalos *****\n");
-	   	 	printf("<a> 2a menor\n");
-	    	printf("<b> 2a Maior\n");
-	    	printf("<c> 3a menor\n");
-	        printf("<d> 3a Maior\n");
-	        printf("<e> 4a Justa\n");
-	        printf("<f> 5a Justa\n");
-	        printf("Qual intervalo foi tocado?\n");
-	    	printf("<s> ou <S> para Sair\n");  	
-	        scanf("%s",&escolha);
-	        
+
+			menuIntervalos();
+		    scanf("%s",&escolha);
+
 	        if (strcmp(escolha,"s") == 0 || strcmp(escolha,"S")==0) {
 				i++;
 				printf("\nAcertos = %d\nErros = %d\n",acertos,erros);
@@ -181,24 +162,16 @@ void intervalos() {
 			}
 			Sleep(1000);
 		}
-		
+
 		else if (intervalo==4) {
-				
+
 			Beep(261,500);
 			Beep(349,500);
-			
 			system("cls");
-			printf("***** Intervalos *****\n");
-	   	 	printf("<a> 2a menor\n");
-	    	printf("<b> 2a Maior\n");
-	    	printf("<c> 3a menor\n");
-	        printf("<d> 3a Maior\n");
-	        printf("<e> 4a Justa\n");
-	        printf("<f> 5a Justa\n");
-	        printf("Qual intervalo foi tocado?\n");
-	    	printf("<s> ou <S> para Sair\n");  	
-	        scanf("%s",&escolha);
-	        
+
+			menuIntervalos();
+		    scanf("%s",&escolha);
+
 	        if (strcmp(escolha,"s") == 0 || strcmp(escolha,"S")==0) {
 				i++;
 				printf("\nAcertos = %d\nErros = %d\n",acertos,erros);
@@ -212,25 +185,17 @@ void intervalos() {
 			}
 			Sleep(1000);
 		}
-		
+
 		else if (intervalo==5) {
-			
-			
+
+
 			Beep(261,500);
 			Beep(391,500);
 			system("cls");
-			
-			printf("***** Intervalos *****\n");
-	   	 	printf("<a> 2a menor\n");
-	    	printf("<b> 2a Maior\n");
-	    	printf("<c> 3a menor\n");
-	        printf("<d> 3a Maior\n");
-	        printf("<e> 4a Justa\n");
-	        printf("<f> 5a Justa\n");
-	        printf("Qual intervalo foi tocado?\n");
-	    	printf("<s> ou <S> para Sair\n");  	
-	        scanf("%s",&escolha);
-	        
+
+			menuIntervalos();
+		    scanf("%s",&escolha);
+
 	        if (strcmp(escolha,"s") == 0 || strcmp(escolha,"S")==0) {
 				i++;
 				printf("\nAcertos = %d\nErros = %d\n",acertos,erros);
@@ -245,7 +210,7 @@ void intervalos() {
 			}
 			Sleep(1000);
 		}
-            
+
 	}
 	Sleep(3000);
 }
@@ -280,7 +245,7 @@ int main() {
 	strcpy(escalaCromatica[12].nome,"Dó5"); escalaCromatica[12].frequencia=523;
 
 	int y = 0;
-	
+
 	while(y==0) {
 		char opcao[1];
 
@@ -292,12 +257,12 @@ int main() {
 		printf("<5> Sair\n");
 		printf("Digite o numero da opcao: ");
 		scanf("%s",&opcao);
-		
-		
-		
+
+
+
 		if (strcmp(opcao, "1")==0) {
 			afinacao();
-		} 
+		}
 		else if (strcmp(opcao, "2")==0) {
 			tocarEscalaNatural(escalaNatural);
 		}
@@ -314,6 +279,3 @@ int main() {
 	}
 	return 0;
 }
-
-
-
